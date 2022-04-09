@@ -67,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
 
                 x=getIntent().getStringExtra("mail");
+                Intent i=new Intent(MainActivity.this,MapsActivity.class);
+                i.putExtra("latitude",latitude);
+                i.putExtra("longitude",longitude);
+
+
 
 
 
@@ -75,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
                 user.put("email",x);
                 user.put("longitude",longitude);
                 user.put("latitude",latitude );
-                user.put("location","https://www.google.com/maps/search/?api=1&query="+latitude+"%2C"+longitude+"&query_place_id=ChIJKxjxuaNqkFQR3CK6O1HNNqY" );
+                user.put("location","https://www.google.com/maps/search/?api=1&query="+latitude+"%2C"+longitude );
 
-                db.collection("users").document("new").set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                db.collection("users").document("zk").set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
                         Log.i("TAG", "DocumentSnapshot added with ID: ");
