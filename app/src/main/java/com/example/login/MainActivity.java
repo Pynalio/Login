@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 user.put("email",x);
                 user.put("longitude",longitude);
                 user.put("latitude",latitude );
-                user.put("location","https://www.google.com/maps/search/?api=1&query="+latitude+"%2C"+longitude );
+                user.put("location","https://www.google.com/maps/search/?api=1&query="+latitude+"%2C"+longitude);
 
                 db.collection("users").document("zk").set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
 
-                    startActivity(new Intent(MainActivity.this,Quiz1.class));
+                    startActivity(new Intent(MainActivity.this,MapsActivity.class));
             }
 
             public void getLocation() {
