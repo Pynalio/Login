@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        tvLatitude = (TextView) findViewById(R.id.latitude);
-        tvLongitude = (TextView) findViewById(R.id.longitude);
+
         g = (Button) findViewById(R.id.location);
             bundle = getIntent().getExtras();
 
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
 
-                    startActivity(new Intent(MainActivity.this,MapsActivity.class));
+                    startActivity(new Intent(MainActivity.this,Quiz1.class));
             }
 
             public void getLocation() {

@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/drawable/rounded_rectangle.xml" value="0.2135" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_add.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz1.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz2.xml" value="0.1" />
+        <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz2.xml" value="0.264" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz3.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz4.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zakaria/AndroidStudioProjects/Login/app/src/main/res/layout/activity_quiz5.xml" value="0.36666666666666664" />

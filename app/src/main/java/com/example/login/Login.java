@@ -40,6 +40,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class Login extends AppCompatActivity {
@@ -53,6 +54,7 @@ public class Login extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private LocationRequest locationRequest;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
 
 
@@ -91,6 +93,33 @@ public class Login extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
                                 if (task.isSuccessful()) {
+
+                                    Question Q1=new Question(1,"A cette intersection, je laisse la priorité à droite :","non",0,"oui","non"
+                                    );
+
+                                    Question Q2=new Question(1,"Merci de choisir une réponse S.V.P !","À droite",0,"oui","non"
+                                    );
+                                    Question Q3=new Question(1,"Merci de choisir une réponse S.V.P ! :","non",0,"oui","non"
+                                    );
+                                    Question Q4=new Question(1,"A cette intersection, je laisse la priorité à droite :","oui",0,"oui","non"
+                                    );
+                                    Question Q5=new Question(1,"Merci de choisir une réponse S.V.P !","non",0,"oui","non"
+                                    );
+
+// Add a new document with a generated ID
+                                    db.collection("Questions").document("Q1")
+                                            .set(Q1);
+                                    db.collection("Questions").document("Q2")
+                                            .set(Q2);
+                                    db.collection("Questions").document("Q3")
+                                            .set(Q3);
+                                    db.collection("Questions").document("Q4")
+                                            .set(Q4);
+                                    db.collection("Questions").document("Q5")
+                                            .set(Q5);
+
+
+
 
 
                                     Log.i("TAG", "signInWithEmail:success");

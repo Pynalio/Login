@@ -7,7 +7,9 @@
     tools:context="Register"
     android:orientation="vertical"
     android:layout_margin="30dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/back2"
+    >
 
 
     <ImageView
@@ -20,12 +22,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/etName"
         android:hint="Name"
+        android:textColorHint="@color/black"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etMail"
-        android:hint="Email *"
+        android:hint="Email"
+        android:textColorHint="@color/black"
         android:drawableLeft="@drawable/ic_mail_black_24dp"/>
 
 
@@ -33,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etPassword"
+        android:textColorHint="@color/black"
         android:hint="Password *"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_baseline_lock_24"/>
@@ -42,6 +47,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etPassword1"
         android:hint="Confirm password"
+        android:textColorHint="@color/black"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_baseline_lock_24"/>
     <Button
@@ -49,6 +55,8 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/bRegister"
+        android:background="@drawable/rounded_rectangle"
+
         />
 
 
